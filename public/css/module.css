@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    /* background: linear-gradient(90deg, #fafafa, #F9C929); */
+    background: #fff;
+    display: grid;
+    place-items: center;
+  }
+  
+  h1 {
+    font-style: oblique;
+    color: transparent;
+    margin-top: 2em;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, #ec4755, #e4605c);;
+  }
+  
+  #app-content {
+    display: grid;
+    place-items: center;
+    margin-top: 7em;
+  }
+  
+  #task-form h2 {
+    padding: 0 3em;
+    /* color: #000; */
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, #ec4755, #e4605c);;
+  }
+  
+  #task-form input {
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+    /* background: #acaaaa; */
+    background: linear-gradient(90deg, #BDC3C7, #2C3E50);
+    width: 18em;
+    min-height: 3em;
+    border: none;
+    outline: 0;
+    border-radius: 10px;
+    overflow-y: auto;
+  }
+  
+  #task-form input::placeholder {
+    color: #555;
+  }
+  
+  #task-form .addTask {
+    height: 3em;
+    width: 5em;
+    border: none;
+    color: #fff;
+    background: #2C3E50;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #task-form .fa-solid {
+    font-weight: bold;
+  }
+  
+  .task-wrapper {
+      padding: 0.7em;
+      margin: 1em 1em;
+      /* background: #706e6e; */
+      background: linear-gradient(90deg, #ec4755, #e4605c);
+      min-height: 3em;
+      width: 19em;
+      border-radius: 10px;
+      overflow: hidden;
+  }
+  
+  .task-wrapper span {
+    /* color: #fff; */
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(45deg, #A1FFCE, #FAFFD1);
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .btnRemove {
+    position: relative; /* Change to relative position */
+    background: none;
+    border: none;
+  }
+  
+  .btnRemove .fa-trash {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0.1em 0;
+  }
+
+@media only screen and (max-width: 600px) {
+  body {
+    height: 100%;
+    width: auto;
+    overflow-x: hidden;
+  }
+  h1 {
+    font-size: 1.3em;
+    font-weight: 800;
+    margin: 2em 0;
+  }
+  #task-form h2 {
+    font-size: 1.7em;
+    padding: 0 2.6em;
+  }
+  #task-form input {
+    width: 18em;
+    height: 3.2em;
+    border-radius: 5px;
+  }
+  #task-form .addTask {
+    border: none;
+    color: #fff;
+    height: 3.2em;
+    background: #2C3E50;
+    border-radius: 5px;
+  }
+  #task-form .fa-trash {
+    margin-left: 3em;
+  }
+  .task-wrapper {
+    padding: 1.5em 5em;
+    min-height: 2em;
+  }
+}
