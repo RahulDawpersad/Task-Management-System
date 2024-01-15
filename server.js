@@ -4,17 +4,17 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3306;
 
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
 // MySQL database connection
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'task_management',
+  host: 'bs4bfjfdqhcsvsocqpyp-mysql.services.clever-cloud.com',
+  user: 'u7vek3bjguekgimo',
+  password: 'u7vek3bjguekgimo',
+  database: 'bs4bfjfdqhcsvsocqpyp',
 });
 
 db.connect(err => {
